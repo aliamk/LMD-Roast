@@ -2,7 +2,23 @@ import firebase from 'firebase/app'
 import 'firebase/firestore' // for the database
 import 'firebase/auth'  // for the authorisation
 
+const config = {
+  // apiKey: "AIzaSyCE8o3gtPNquPCj89EfRlgbVlCtEChYQSk",
+  // authDomain: "crwn-db-949da.firebaseapp.com",
+  // databaseURL: "https://crwn-db-949da.firebaseio.com",
+  // projectId: "crwn-db-949da",
+  // storageBucket: "crwn-db-949da.appspot.com",
+  // messagingSenderId: "703367615173",
+  // appId: "1:703367615173:web:4b8686cc8be509b48dd6ac",
+  // measurementId: "G-XSCE9G9LR6"
+  apiKey: "AIzaSyBPEabtWWpwv-yRWfuKpOl39YWwSEQl7Dg",
+    authDomain: "lmd-roast-64115.firebaseapp.com",
+    projectId: "lmd-roast-64115",
+    storageBucket: "lmd-roast-64115.appspot.com",
+    messagingSenderId: "1004686249671",
+    appId: "1:1004686249671:web:6937295548dd676fe738e2"
 
+}
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if(!userAuth) return; // if NULL is returned (user not signed in), exit function
