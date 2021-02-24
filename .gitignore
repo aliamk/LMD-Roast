@@ -1,2 +1,3 @@
 node_modules
-../../firebase.utils.js
+
+src/firebase/firebase.utils.js
